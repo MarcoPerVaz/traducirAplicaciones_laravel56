@@ -6,43 +6,43 @@
   <!-- End Title -->
 
   <!-- Commit name -->
-  <h2>Commit - <strong>Dependencia Debugbar</strong></h2>
+  <h2>Commit - <strong>Instalar y configurar idiomas adicionales para nuestra aplicación</strong></h2>
   <!-- End Commit name -->
   
-  <!-- Commit instructions -->
-  <ol>
-     <li>
-        Instalar Laragon sino se tiene
-        <ul>
-          <li>
-            Descargar la versión que se desee usar
-            <pre><a href="https://laragon.org/download/">Descargar Laragon</a></pre>
-          </li>
-        </ul>
-    </li>
-    <li>Creación y edición del archivo Instrucciones_Commit.md</li>
-    <li>Edición del archivo readme.md</li>
-    <li>
-      Creación del proyecto TraducirAplicaciones
-      <pre>composer create-project --prefer-dist laravel/laravel TraducirAplicaciones "5.6.*"</pre>
-    </li>
-    <li>Instalar el editor de código que mas te guste(yo instalé vscode)</li>
-  </ol>
-  <!-- End Commit instructions -->
   
 <!-- Commit instructions -->
 <ol>
   <li>
-    Instalar Debugbar
-    <pre>composer require barryvdh/laravel-debugbar --dev</pre>
+    Instalación de la librería Laravel Lang
+    <pre>composer require caouecs/laravel-lang:~3.0</pre>
+    <ul>
+      <li>
+        <code>Copiar la carpeta vendor/caouecs/src/es</code>
+        <br>
+        y pegar en
+        <br>
+        <code>resources/lang/</code>
+      </li>
+    </ul>
   </li>
+  <li>
+    Edición del archivo config/app.php
+    <br>
+    <code>'locale' => 'es',</code>
+  </li>
+  <li>Creación del archivo de traducción json <code>resources/lang/es.json</code></li>
+  <li>Creación del archivo de traducción json <code>resources/lang/en.json</code></li>
 </ol>
 <!-- End Commit instructions -->
   
 <!-- Notes -->
 <h3>Notas:</h3>
 <ul>
- <li>Debugbar es un paquete que te permite ver ciertas cosas, como consultas, vistas, sesiones al momento de desarrollar un proyecto</li>
+  <li>
+    Laravel Lang es una librería para traducir todos los mensajes que laravel tiene
+    pero que por defecto solo tiene en Inglés
+    <pre><a href="https://github.com/caouecs/Laravel-lang">Ir a Laravel Lang</a></pre>
+  </li>
 </ul>
 
 <em></em>
