@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+/* Ruta Lenguaje */
+Route::get('/set_language({lang}', 'Controller@setLanguage')->name('set_language');
