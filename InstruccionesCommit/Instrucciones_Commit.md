@@ -6,7 +6,7 @@
   <!-- End Title -->
 
   <!-- Commit name -->
-  <h2>Commit - <strong>Creación del proyecto</strong></h2>
+  <h2>Commit - <strong>Dependencia Debugbar</strong></h2>
   <!-- End Commit name -->
   
   <!-- Commit instructions -->
@@ -30,16 +30,20 @@
   </ol>
   <!-- End Commit instructions -->
   
-  <!-- Notes -->
-  <h3>Notas:</h3>
-  <ul>
-     <li>
-        Laragon es un entorno de desarrollo para aplicaciones web
-        <pre><a href="https://laragon.org/">Ir a Laragon</a></pre>
-        <pre><a href="https://laragon.org/docs/">Documentación de Laragon</a></pre>
-        <li>Instala lo necesario para desarrollar en Laravel</li>
-      </li>
-  </ul>
-    
-  <em></em>
-  <!-- End notes -->
+<!-- Commit instructions -->
+<ol>
+  <li>
+    Instalar Debugbar
+    <pre>composer require barryvdh/laravel-debugbar --dev</pre>
+  </li>
+</ol>
+<!-- End Commit instructions -->
+  
+<!-- Notes -->
+<h3>Notas:</h3>
+<ul>
+ <li>Debugbar es un paquete que te permite ver ciertas cosas, como consultas, vistas, sesiones al momento de desarrollar un proyecto</li>
+</ul>
+
+<em></em>
+<!-- End notes -->
